@@ -1,0 +1,23 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /images # in the html can access from localhost:8080/images
+  static_dir: templates/images # folder template, subfolder images
+- url: /js
+  static_dir: templates/js  
+- url: /css
+  static_dir: templates/css  
+- url: /fonts
+  static_dir: templates/fonts  
+- url: /assets
+  static_dir: templates/assets 
+- url: /.*
+  script: myapp.app
