@@ -30,7 +30,7 @@ TOKEN_URL = "https://www.googleapis.com/oauth2/v4/token"
 
 #token: ya29.GltBBOqKeBm6LY1EftxYGXpGYNHs8FhoI_1yZhDms7mGQ-rwMxBGaxKNjhTYwVCdo1xqNNh-NJf6AdOJO94RSBQz-lbbs5yQpfyWUO4ct1SFPRd8rS4M4kAAflfL
 
-def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
+def id_generator(size=12, chars=string.ascii_uppercase + string.digits):
 	return ''.join(random.choice(chars) for _ in range(size))
 
 
