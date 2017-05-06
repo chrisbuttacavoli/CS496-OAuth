@@ -48,9 +48,12 @@
     <div class="col-sm-9">
       <h4><small>Home</small></h4>
       <hr>
-      <h1>{{ message }}</h1>
+      <h1>Congratulations! You have been authenticated with our own OAuth 2 implementation.</h1>
       <p>Here is your information:</p>
-	  <p>{{ info }}</p>
+	  <p>First Name: <strong>{{ firstName }}</strong></p>
+	  <p>Last Name: <strong>{{ lastName }}</strong></p>
+	  <p>User URL: <strong><a href="{{ googleUrl }}">{{ googleUrl }}</a></strong></p>
+	  <p>Randomly generated state variable: <strong>{{ stateVar }}</strong></p>
       <br><br>
       </div>
     </div>
